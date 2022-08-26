@@ -1,1 +1,60 @@
-// How declare var 
+// Types of var 
+// You must declare type of var!
+
+//****For excample 
+void main() {
+  int age = 30;
+  print(age);
+}
+
+// This case returns ERROR because var age cant be string
+void main() {
+  int age = 30;
+  age = 'Dummy';
+  print(age);
+}
+
+// This case returns Dummy, because var is dynamical
+void main() {
+  dynamic age = 30;
+  age = 'Dummy';
+  print(age);
+}
+
+
+//--------------------------------------------------------
+// Type of functions
+//void - means you dont return value! 
+//others declaring func are return values! 
+
+//****For excample 
+
+void main() {
+  int age = 30;
+  print(30);
+}
+
+// In order to return value you have to declare func with another way
+//****For excample 
+
+void main() {
+  print('something');
+  String greet = greeting();
+  int age = getAge();
+  print(greet);
+  print(age);
+}
+
+String greeting() {
+    return 'hello';
+}
+
+int getAge() {
+    return 30;
+}
+
+// You also can use lowCode 
+
+String greeting() => 'hello';
+
+int getAge() => 30;
