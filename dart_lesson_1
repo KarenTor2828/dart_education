@@ -58,3 +58,26 @@ int getAge() {
 String greeting() => 'hello';
 
 int getAge() => 30;
+
+//--------------------------------------------------------
+// DataType List 
+
+void main() {
+  List names = ['Karen', 'Dolla', 'Jack'];
+  names.add('Harry'); // add new name
+  names.remove('Karen'); // Delete name
+  print(names);
+}
+
+// You can also define DataType in List  List<String> 
+// You cant add int or other DataType
+
+void main() {
+  List<String> names =
+ ['Karen', 'Dolla', 'Jack'];
+  names.add('Harry'); // add new name
+  names.remove('Karen'); // Delete name
+  print(names);
+}
+
+
