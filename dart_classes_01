@@ -1,1 +1,60 @@
+void main() {
+  // Declare first class
+  User userOne = User();
+  print(userOne.username);
+  print(userOne.age);
+  userOne.login();
+  
+  // Declare the second one
+  User userTwo = User();
+  print(userOne.username);
+}
+
+class User {
+  
+  String username = 'mario';
+  int age = 25;
+  
+  void login(){
+    print('user logged in');
+  }
+}
+
+//--------------------------------------
+
+// Using the special constructor func in class
+// More information about null and ? - https://dart.dev/tools/diagnostic-messages?utm_source=dartdev&utm_medium=redir&utm_id=diagcode&utm_content=not_initialized_non_nullable_instance_field#not_initialized_non_nullable_instance_field
+ 
+ 
+ void main() {
+  // Declare first class
+  User userOne = User('Jack', 25);
+  print(userOne.username);
+  print(userOne.age);
+  userOne.login();
+  
+  // Declare the second one
+  User userTwo = User('Dummy', 45);
+  print(userOne.username);
+  
+}
+
+class User {
+  
+  String? username;
+  int? age;
+  
+  User(String username, int age){
+    this.username = username;
+    this.age = age;
+  }
+  
+  void login(){
+    print('user logged in');
+  }
+}
+
+//--------------------------------------
+
+
 
